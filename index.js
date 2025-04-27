@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 app.get("/payment", async (req, res) => {
     try {
         let request = {
-            order_amount: 1.0,
+            order_amount: 200.0,
             order_currency: "INR",
             order_id: await generateOrderId(),
             customer_details: {
